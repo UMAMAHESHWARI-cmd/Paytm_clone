@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Paytm</title>
+    <style>
+        body{
+            background-color: #F7F9FC;
+        }
+        nav{
+            display: flex;
+            background-color: #fff;
+            padding: 12px 24px;
+            align-items: center;
+        }
+  .logo img{
+            height: 30px;
+            vertical-align: middle;
+        }
+        .logo span {
+  margin-left: px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin-left: 30px;
+}
+
+.nav-links li {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav-links img{
+    height: 15px;
+    margin-top: 19px;
+}
+.download{
+    margin-right: 20px;
+    margin-left: 80px;
+    font-size: 21px;
+    cursor: pointer;
+    color: #555;
+    align-items: center;
+    display: flex;
+}
+.download img{
+    height: 30px;
+}
+.signin-btn {
+  background-color: #0033cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 300px;
+  height: 40px;
+  width: 100px;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  width: 45%;
+  border-radius: 20px;
+}
+
+.box h3 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.ser .bx {
+  background-color: #00B8F5; 
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 50px;
+  height: 50px;
+  width: 750px;
+}
+
+.ser .bx img {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+}
+
+.ser .bx p {
+  margin: 0;
+  font-size: 25px;
+}
+.ser .bx li {
+  margin-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+.ser .bx button{
+  border: 2px solid white; 
+  border-radius: 30px;       
+  background-color: #00B8F5; 
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-left: 42px
+}
+.ser .br {
+  background-color: #012A72; 
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 50px;
+  height: 50px;
+  width: 750px;
+}
+
+.ser .br img {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+}
+
+.ser .br p {
+  margin: 0;
+  font-size: 25px;
+}
+.ser .br button{
+  border: 2px solid white; 
+  border-radius: 30px;       
+  background-color:#012A72 ; 
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-left: 120px
+}
+.box .icons img{
+  height: 70px;
+}
+.pic {
+  display: inline-block;
+height: 200px;
+width: 590px;
+border-radius: 20px;
+margin-left: 10px;
+margin-top: 20px;
+}
+.pic img{
+height: 200px;
+width: 590px;
+border-radius: 20px;
+margin-left: 47px;
+margin-top: 15px;
+}
+.secb{
+  width: 2500px;
+  height: 400px;
+margin-top: 40px;
+}
+.secb img{
+display: inline-block;
+width: 800px;
+margin-left: 20px;
+}
+.old {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.monk {
+  background-color: #E8F8FD;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+.travel-container {
+  max-width: 1750px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.travel-header .logo {
+  height: 30px;
+}
+
+.flight-options {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.flight-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group select {
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.search-button button {
+  padding: 10px 10px;
+  background-color: #00baf2;
+  color: white;
+  border: white;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  left: 300px;
+}
+
+.special-fares {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.fare-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.fare-tags div {
+  background-color: #e8f8fd;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 17px;
+  border: 1px solid #b8e6f1;
+  
+}
+.thirdb{
+  background-color: #FFFFFF;
+  height: 900px;
+  width: 1800px;
+  border-radius: 20px;
+  margin-left: 50px
+}
+.thirdb img{
+  height: 65px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.thirdb p{
+  font-size: 60px;
+  margin-left: 100px;
+  color: black;
+  font-weight: bold;
+}
+.thirdb h2{
+  font-size: 35px;
+  margin-left: 100px;
+}
+button.adv{
+  height: 65px;
+  width: 230px;
+  text-align: center;
+  margin-left: 200px;
+  background-color: #002970;
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.curd img{
+        height: 850px;
+        width: 700px;
+}
+.rice  p{
+  font-size: 25px;
+  margin-left: 100px;
+}
+.dal .rasam {
+  background-color: #00A4F7; 
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  color: white;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-top: 50px;
+  height: 40px;
+  width: 1750px;
+  font-size: 27px;
+}
+
+.dal .rasam img {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dal.rasam p {
+  margin: 5px;
+  font-size: 5px;
+  background-color: #00A4F7;
+}
+
+.um {
+  height: 900px;
+  width: 1800px;
+  }
+.hp{
+  background-color: #E3F1FE;
+  height: 1170px;
+  width: 900px;
+  border-radius: 20px;
+  margin-left:10px;
+  margin-top: 60px;
+
+}
+.hp img{
+  height: 65px;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+.hp p{
+  margin-left: 90px;
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.hp h2{
+  font-size: 30px;
+  margin-left: 95px;
+  margin-top: -35px;
+  font-weight: 400;
+}
+.bmw img{
+  height: 550px;
+  width: 750px;
+  margin-left: -0px;
+  margin-top: -50px;
+}
+.bp{
+  background-color: #E8FAFF;
+  height: 1150px;
+  width: 900px;
+  border-radius: 20px;
+  margin-left:930px;
+  margin-top: -1130px;
+
+}
+.bp img{
+  height: 65px;
+  margin-top: 90px;
+  margin-left: 90px;
+}
+.bp p{
+  margin-left: 90px;
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.bp h2{
+  font-size: 30px;
+  margin-left: 95px;
+  margin-top: -35px;
+  font-weight: 400;
+}
+.bp button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin-left: 95px;
+    background-color: #E8FAFF;
+}
+.jam img{
+  height: 500px;
+  width: 750px;
+  margin-left: -0px;
+}
+.bitch{
+  background-color: #FFFFFF;
+  height: 1000px;
+  width: 1800px;
+  margin-left: 50px;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+.bitch img{
+  height: 25px;
+  width: 200px;
+  margin-left: 150px;
+  margin-top: 120px;
+}
+.bitch p{
+  margin-left: 150px;
+  margin-top: 30px;
+  font-size: 58px;
+  font-weight: 600;
+}
+.bitch h2{
+  margin-left: 150px;
+  margin-top: -20px;
+  font-size: 35px;
+  font-weight: 400;
+}
+.bitch p.yup img{
+  height: 700px;
+  width: 700px;
+  margin-left: 900px;
+  margin-top: -700px;
+}
+div.yeah img{
+  height: 100px;
+  width: 400px;
+  margin-top: 30px;
+}
+.poco{
+   background-color: #FFFFFF;
+  height: 900px;
+  width: 1800px;
+  border-radius: 20px;
+  margin-top: 300px;
+}
+.poco img{
+  height: 60px;
+  width: 90px;
+  margin-left: 160px;
+  margin-top: 180px;
+}
+button.puma{
+  height: 65px;
+  width: 230px;
+  text-align: center;
+  margin-left: 150px;
+  background-color: #002970;
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.sam img{
+        height: 700px;
+        width: 850px;
+        margin-top: -25px;
+        margin-left: 100px;
+}
+.zara{
+   background-color: #FFFFFF;
+  height: 1200px;
+  width: 1900px;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-left: -50px
+}
+.hm p{
+  font-size: 25px;
+  padding:  80px 30px;
+  color: #707070;
+}
+ </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./paytmlogo.jpg" alt="">
+        </div>
+        <ul class="nav-links">
+      <li>Recharge & Bills <img src="./down arrow.jpg" alt=""></li>
+      <li>Ticket Booking <img src="./down arrow.jpg" alt=""></li>
+      <li>Payments & Services <img src="./down arrow.jpg" alt=""></li>
+      <li>Paytm for Business <img src="./down arrow.jpg" alt=""></li>
+      <li>Company <img src="./down arrow.jpg" alt=""></li>
+      <br><br><br>
+        </ul>
+        <div class="download" style="color:#002970;"> <img src="./downloadlogo.jpg" alt="">Download App</div>
+         <button class="signin-btn">Sign In</button>
+    </nav>
+     <section class="services">
+    <div class="box">
+      <h3>Recharges</h3>
+      <div class="icons">
+        <div><img src="./mobile recharge.avif" alt=""><br>Mobile Recharge</div>
+        <div><img src="./Fast tag.avif" alt=""><br>FASTag Recharge</div>
+        <div><img src="./DTH.avif" alt=""><br>DTH Recharge</div>
+        <div><img src="./view all.avif" alt=""><br>View All Products</div>
+      </div>
+      <section class="ser">
+    <div class="bx"><img src="./cashback.avif" alt="">
+    <p>Do Mobile Recharge and Win ₹100
+      <br> cashback .Promo:TAKEITALL </p>
+      <button>Recharge Now →</button>
+    </div>
+    </div>
+     <div class="box">
+      <h3>Bill Payments</h3>
+      <div class="icons">
+        <div><img src="./electri.avif" alt=""><br>Electricity Bill</div>
+        <div><img src="./lic.png" alt=""><br>LIC / Insurance</div>
+        <div><img src="./loan.avif" alt=""><br>Loan EMI Payment</div>
+        <div><img src="./view all.avif" alt=""><br>View All Products</div>
+      </div>
+      <section class="ser">
+    <div class="br"><img src="./broad.jpg" alt="">
+        <p>  BROADBAND Recharge <br> Bill due? Pay now & get reward</P>
+          <button> Pay Now →</button>
+    </div>
+  </section>
+    </div>
+  </section>
+  </section>
+  
+  <p class="pic">
+    <img src="./1 meesho.jpg" alt="">
+  </p>
+  <p class="pic">
+    <img src="./2.meesho.jpg" alt="">
+  </p>
+  <p class="pic">
+    <img src="./3.meesho.jpg" alt="">
+  </p>
+</div>
+<section class="old">
+ <div class="monk">
+      <div class="chip">
+        <div><img src="./image.meesho.jpg"></div>
+        <div class="travel-container">
+    <div class="flight-options">
+      <label><input type="radio" name="trip" checked> One Way</label>
+      <label><input type="radio" name="trip"> Round Trip</label>
+    </div>
+        <div class="flight-form">
+                <div class="form-group">
+        <label>From</label>
+        <input type="text" value="Delhi (DEL)">
+      </div>
+      <div class="form-group">
+        <label>To</label>
+        <input type="text" value="Mumbai (BOM)">
+      </div>
+      <div class="form-group">
+        <label>Depart</label>
+        <input type="text" value="Wed, 06 Aug 25">
+      </div>
+      <div class="form-group">
+        <label>Return</label>
+        <input type="text" placeholder="Add Return">
+      </div>
+      <div class="form-group">
+        <label>Passenger & Class</label>
+        <select>
+          <option>1 Traveller, Economy</option>
+        </select>
+      </div>
+      <div class="form-group search-button">
+        <button>Search Flights</button>
+      </div>
+    </div>
+    <hr style="margin-top: 20px;">
+    <div class="special-fares">
+      <span>Special Fares (optional)</span>
+      <div class="fare-tags">
+        <div>✔ Extra Savings</div>
+        <div>🎖 Armed Forces <br>Up to ₹600 off</div>
+        <div>🎓 Student <br>Extra Baggage</div>
+        <div>👴 Senior Citizen <br> Up to ₹600 off</div>
+      </div>
+    </div>
+  </div>
+            </div>
+  </section>
+
+<section class="thirdb">
+    <div>
+      <img src="./paytmmoney.jpg" alt="">
+      <p>Everything you need to <br>start your 
+        <span style="color: #00BAF2;"> investment  <br>journey</span>
+  <h2>Whether you're a beginner or pro, Paytm Money <br>
+         helps you invest smarter and achieve financial  <br>
+         independence. Get access to expert opinion, mutual 
+         <br>fund SIP, F&O trading, and much more - all in one app.</h2>
+    </div>
+    <button class="adv">Learn More →</button>
+    <div class="rice">
+   
+  <p> Investments in the securities market are subject to market risks,<br>   
+  read all the related documents carefully before investing. <br>
+  For complete Terms & Conditions and Disclaimers visit: <br>
+  <span style="color: #00baf2;">https://www.paytmmoney.com/stocks/policies/terms</p></span>
+  </div>
+    <P class="curd" style="margin-left: 850px; margin-top: -900px;"><img src="./thirdb.meesho.jpg" ></P>
+  </section>
+  <section class="dal">
+    <div class="rasam"><img src="./paytmsmalllogo.jpg.png" alt="">
+    <p> 24×7 Trusteed customer support to assist and help you in every step of your journey
+      <button style="width: 210px; height: 50px; margin-left: 510px; text-align: center; 
+         background-color: #00A4F7; color: white; border: 2px solid white; border-radius: 30px; ">Learn More → </button>
+      </div>
+      </section>
+      <section class="hp">
+        <img src="./credit card.avif" alt="">
+        <p>One destination for <br>
+          <span style="color: #00baf2;">Credit Cards</span>
+          <h2>Paytm HDFC, SBI Card & Axis Bank Credit Card with  <br>
+            assured Cashback and incredible offers.</h2>
+</h2>
+        </p>
+       <p style="margin-top: -35px; margin-left: 5px;"> <img src="./sbi card.jpg"></p>
+<div class="bmw">
+    <p><img src="./card.paytm.png" alt=""></p>
+</div>  
+      </section>    
+<div class="bp">
+  <img src="./insurance broking.png" alt="">
+  <p>Insurance ka <br>
+    <span style="color: #00baf2;">Super Market</span>
+    <h2>A Smart, Simple & Transparent Platform to Explore & <br> Purchase Insurance.</h2>
+    <button>Get it now →</button>
+  <p class="jam"><img src="./family.paytm.png" ></p>
+  </p>
+</div>
+</section>
+<section class="bitch">
+  <div><img src="./paytmsmalllogo.jpg.png" alt="">
+  <p>Pay anyone directly <br> from your
+  <span style="color: #00baf2;"> bank <br>account</span>
+  </p>
+  <h2>Pay anyone, everywhere. Make contactless & secure <br>
+    payments in-stores or online using Paytm UPI or  <br>
+    Directly from your Bank Account. Plus, send & <br>
+    receive money from anyone.</h2>
+    <div class="yeah"><img src="./app play.jpg"></div>
+    <p class="yup"><img src="./250 paid.jpg"></p>
+
+  </div>
+   <section class="poco">
+    <div>
+      <img src="./p for bus.png" alt="">
+      <p>Accept payments <br>
+        <span style="color: #00baf2;">online & offline</span>
+      <h2>Millions of small & big businesses use Paytm to <br>accept payments anywhere any time with a wide <br>range of solutions for all kind of merchants</h2>
+    </div>
+     <button class="puma">Learn More →</button>
+    <P class="sam" style="margin-left: 850px; margin-top: -700px;"><img src="./ai.jpg" ></P>
+</section>
+<section class="zara">
+ <div class="hm"> 
+   <p>+  Investor Relations ____________________________________________________________________________________________ 
+    <br> <br> <br>+  More about Paytm ____________________________________________________________________________________________
+    <br><br><br>+  Company ____________________________________________________________________________________________________
+    <br><br><br>Career ________________________________________________________________________________________________________
+    <br><br><br>+  Recharge & pay Bills __________________________________________________________________________________________
+    <br><br><br>+  Pay Loan EMI,Insurance Premiums & Education __________________________________________________________________
+    <br><br><br>+  Book Travel & Entertainment ___________________________________________________________________________________
+    <br><br><br>+  Investments & Miscellaneous ____________________________________________________________________________________
+    <br><br><br>+  Loans and Credit Cards _________________________________________________________________________________________
+    <br><br><br>+  Financial Tools & Calculators ____________________________________________________________________________________
+    <hr color="#CCCCCC">
+    <p>&copy;2025 Paytm</p>
+  </p></div>
+</section>
+<footer></footer>
+</body>
+</html>
